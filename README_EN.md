@@ -22,7 +22,6 @@ This project was developed during the free course **Java in Practice with AWS**,
 - **API Gateway**: HTTP endpoint configuration.
 - **Maven**: Dependency and build manager.
 - **Lombok**: Reduces boilerplate code in Java.
-- **Git/GitHub**: Version control and collaboration.
 
 ## 📁 Project Structure
 

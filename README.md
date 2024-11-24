@@ -22,7 +22,6 @@ Projeto desenvolvido durante o curso gratuito **Java na Prática com AWS**, mini
 - **API Gateway**: Configuração de endpoints HTTP.
 - **Maven**: Gerenciador de dependências e build.
 - **Lombok**: Redução de boilerplate no código Java.
-- **Git/GitHub**: Controle de versão e colaboração.
 
 ## 📁 Estrutura do Projeto
 
