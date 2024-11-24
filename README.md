@@ -27,19 +27,19 @@ Projeto desenvolvido durante o curso gratuito **Java na Prática com AWS**, mini
 ## 📁 Estrutura do Projeto
 
 - **CreateUrlLambda/**
-  - `pom.xml`: Configuração do Maven.
-  - `src/main/java/com/rocketboom/createUrlShortener/Main.java`: Implementação da criação de URLs curtas.
-  - `src/main/java/com/rocketboom/createUrlShortener/UrlData.java`: Classe para armazenar dados de URLs.
+    - `pom.xml`: Configuração do Maven.
+    - `src/main/java/com/rocketboom/createUrlShortener/Main.java`: Implementação da criação de URLs curtas.
+    - `src/main/java/com/rocketboom/createUrlShortener/UrlData.java`: Classe para armazenar dados de URLs.
 
 - **HelloWorldJava/**
-  - `pom.xml`: Configuração do Maven.
-  - `src/main/java/example/Hello.java`: Função simples de exemplo "Hello World".
-  - `src/main/java/org/example/Main.java`: Função principal do projeto.
+    - `pom.xml`: Configuração do Maven.
+    - `src/main/java/example/Hello.java`: Função simples de exemplo "Hello World".
+    - `src/main/java/org/example/Main.java`: Função principal do projeto.
 
 - **RedirectUrlShortener/**
-  - `pom.xml`: Configuração do Maven.
-  - `src/main/java/com/rocketboom/redirectUrlShortener/Main.java`: Implementação do redirecionamento de URLs.
-  - `src/main/java/com/rocketboom/redirectUrlShortener/UrlData.java`: Classe para armazenar dados de URLs.
+    - `pom.xml`: Configuração do Maven.
+    - `src/main/java/com/rocketboom/redirectUrlShortener/Main.java`: Implementação do redirecionamento de URLs.
+    - `src/main/java/com/rocketboom/redirectUrlShortener/UrlData.java`: Classe para armazenar dados de URLs.
 
 - **README.md**
 - **README_EN.md**
@@ -49,12 +49,12 @@ Projeto desenvolvido durante o curso gratuito **Java na Prática com AWS**, mini
 Para iniciar o projeto localmente, siga os passos abaixo:
 
 1. Certifique-se de que o Java e o Maven estão instalados:
-  - Verifique a versão do Java:  
-    java -version
-  - Verifique a versão do Maven:  
-    mvn -version
+- Verifique a versão do Java:  
+  java -version
+- Verifique a versão do Maven:  
+  mvn -version
 
-   Caso não estejam instalados, acesse os sites oficiais do [Java](https://www.java.com/) e [Maven](https://maven.apache.org/) para download e instalação.
+Caso não estejam instalados, acesse os sites oficiais do [Java](https://www.java.com/) e [Maven](https://maven.apache.org/) para download e instalação.
 
 2. Clone o Repositório:  
    git clone <URL_DO_REPOSITORIO>
@@ -79,8 +79,8 @@ Para realizar o deploy do projeto:
 
 3. Configuração do API Gateway:  
    Crie um API Gateway para gerenciar os endpoints:
-- Endpoint para criação de URLs curtas.
-- Endpoint para redirecionamento de URLs.
+    - Endpoint para criação de URLs curtas.
+    - Endpoint para redirecionamento de URLs.
 
 4. Teste o sistema:  
    Envie requisições HTTP para os endpoints gerados e verifique os logs no AWS CloudWatch.

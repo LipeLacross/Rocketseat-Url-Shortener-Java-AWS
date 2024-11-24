@@ -1,4 +1,4 @@
-## 🌐 [Versão em Português do README](README_PT.md)
+## 🌐 [Versão em Português do README](README.md)
 
 # Java in Practice with AWS
 
@@ -7,21 +7,21 @@ This project was developed during the free course **Java in Practice with AWS**,
 ## 🔨 Project Features
 
 - **Short URL Creation**: Receives the original URL and expiration time, generates a unique code, and stores the data in Amazon S3.
-- **URL Redirection**: Validates if the URL is within the expiration period and redirects to the original URL or returns an error if it has expired.
-- **API Gateway**: Configures HTTP endpoints to manage requests.
+- **URL Redirection**: Validates whether the URL is within the expiration time and redirects to the original URL or returns an error if expired.
+- **API Gateway**: HTTP endpoint configuration to manage requests.
 
 ### 📊 Visual Example of the Project
 
-![Visual example of the system](https://metal-flea-041.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F7e08ccba-1e15-4032-8025-5db6afff0a93%2Fb39e3ca4-fead-4100-a870-4fdd55322eec%2Fimage.drawio.png?table=block&id=11820141-41ff-80fe-971c-e69eccfdc5ec&spaceId=7e08ccba-1e15-4032-8025-5db6afff0a93&width=1420&userId=&cache=v2)
+![System visual example](https://metal-flea-041.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F7e08ccba-1e15-4032-8025-5db6afff0a93%2Fb39e3ca4-fead-4100-a870-4fdd55322eec%2Fimage.drawio.png?table=block&id=11820141-41ff-80fe-971c-e69eccfdc5ec&spaceId=7e08ccba-1e15-4032-8025-5db6afff0a93&width=1420&userId=&cache=v2)
 
 ## ✔️ Tools and Technologies Used
 
 - **Java**: Programming language used in the project.
-- **AWS Lambda**: Serverless functions for creating and redirecting URLs.
-- **Amazon S3**: Storage for short URL metadata.
-- **API Gateway**: Configuration of HTTP endpoints.
+- **AWS Lambda**: Serverless functions for URL creation and redirection.
+- **Amazon S3**: Storage of short URL metadata.
+- **API Gateway**: HTTP endpoint configuration.
 - **Maven**: Dependency and build manager.
-- **Lombok**: Boilerplate reduction for Java code.
+- **Lombok**: Reduces boilerplate code in Java.
 - **Git/GitHub**: Version control and collaboration.
 
 ## 📁 Project Structure
@@ -29,7 +29,7 @@ This project was developed during the free course **Java in Practice with AWS**,
 - **CreateUrlLambda/**
     - `pom.xml`: Maven configuration.
     - `src/main/java/com/rocketboom/createUrlShortener/Main.java`: Implementation of short URL creation.
-    - `src/main/java/com/rocketboom/createUrlShortener/UrlData.java`: Class for storing URL data.
+    - `src/main/java/com/rocketboom/createUrlShortener/UrlData.java`: Class to store URL data.
 
 - **HelloWorldJava/**
     - `pom.xml`: Maven configuration.
@@ -39,32 +39,32 @@ This project was developed during the free course **Java in Practice with AWS**,
 - **RedirectUrlShortener/**
     - `pom.xml`: Maven configuration.
     - `src/main/java/com/rocketboom/redirectUrlShortener/Main.java`: Implementation of URL redirection.
-    - `src/main/java/com/rocketboom/redirectUrlShortener/UrlData.java`: Class for storing URL data.
+    - `src/main/java/com/rocketboom/redirectUrlShortener/UrlData.java`: Class to store URL data.
 
 - **README.md**
-- **README_EN.md**
+- **README_PT.md**
 
 ## 🛠️ How to Open and Run the Project
 
 To run the project locally, follow these steps:
 
-1. Make sure Java and Maven are installed:
-    - Check the Java version:  
+1. Ensure that Java and Maven are installed:
+    - Check the Java version:
       java -version
-    - Check the Maven version:  
+    - Check the Maven version:
       mvn -version
 
-   If not installed, visit the official websites of [Java](https://www.java.com/) and [Maven](https://maven.apache.org/) for downloads and installation.
+   If not installed, visit the official sites for [Java](https://www.java.com/) and [Maven](https://maven.apache.org/) to download and install.
 
 2. Clone the Repository:  
    git clone <REPOSITORY_URL>
 
 3. Navigate to the directory and compile the project:  
-   cd <PROJECT_DIRECTORY>  
+   cd <PROJECT_FOLDER>  
    mvn clean install
 
 4. Configure and deploy the Lambda functions:  
-   Use [AWS CLI](https://aws.amazon.com/cli/) to configure and deploy the `CreateShortUrlLambda` and `RedirectShortUrlLambda` functions.
+   Use the [AWS CLI](https://aws.amazon.com/cli/) to configure and deploy the `CreateShortUrlLambda` and `RedirectShortUrlLambda` functions.
 
 ## 🌐 Deployment
 
@@ -78,7 +78,7 @@ To deploy the project:
    Configure and deploy the `CreateShortUrlLambda` and `RedirectShortUrlLambda` functions.
 
 3. Configure the API Gateway:  
-   Create an API Gateway to manage endpoints:
+   Create an API Gateway to manage the endpoints:
     - Endpoint for short URL creation.
     - Endpoint for URL redirection.
 
